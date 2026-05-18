@@ -52,7 +52,7 @@ pip install pandas numpy
 
 Bash
 python Insurance_rag.py
-📊 驗證機制說明
+驗證機制說明
 為了提升準確度，本專案導入了 LLM-as-a-Judge (自動化裁判系統)：
 
 作答模型：Qwen3.6:27b (負責根據條款生成理賠報告)。
@@ -61,7 +61,7 @@ python Insurance_rag.py
 
 評估方法：系統會自動計算 36 個測試情境的 Accuracy，並將結果存於 eval_results.txt，供後續效能分析使用。
 
-📜 專案設計流程記錄
+專案設計流程記錄
 (以下內容可根據你實際的操作過程修改)
 
 資料前處理：利用 ChatGPT 協助將繁雜的保險條款 PDF 清洗並結構化為 Neo4j 友善的 JSON。
@@ -70,7 +70,7 @@ Cypher 自動生成優化：針對 GraphCypherQAChain 的 Prompt 進行多次迭
 
 效能優化：將原本 Gemma/Qwen 混合模型架構改為單一高效能模型，解決 VRAM 資源衝突帶來的速度延遲。
 
-🤝 參考連結
+參考連結
 LangChain Neo4j Integration
 
 Ollama Official Documentation
