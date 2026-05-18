@@ -18,9 +18,9 @@ def load_data(file_path):
 # 2. 設定本地端語言模型與 Neo4j GraphRAG
 # ==========================================
 graph = Neo4jGraph(
-    url="neo4j://127.0.0.1:7687", 
+    url="你的url", 
     username="neo4j", 
-    password="agi108agi"
+    password="你的密碼"
 )
 
 # 主要大腦：負責知識圖譜檢索與推理回答 (Gemma)
