@@ -25,13 +25,13 @@ RAM：建議 32GB 以上。
 
 程式語言：Python 3.10+。
 
-📦 快速啟動與安裝指南
+快速啟動與安裝指南
 第一步：安裝必備服務
 Ollama：下載並安裝後，執行以下指令拉取模型：
 
 Bash
 ollama pull qwen3.6:27b
-Neo4j：啟動 Neo4j 資料庫，並確保 Bolt 連線埠為 7687，預設帳密為 neo4j/agi108agi (可於代碼中調整)。
+Neo4j：啟動 Neo4j 資料庫，預設帳密為於代碼中調整
 
 第二步：安裝 Python 依賴套件
 請執行以下指令安裝本專案所需之核心函式庫：
@@ -45,7 +45,11 @@ pip install beautifulsoup4
 
 # 其他輔助工具
 pip install pandas numpy
-第三步：執行專案
+
+第三步：下載Neo4j
+匯入Neo4j圖母
+
+第四步：執行專案
 將保險條款 JSON 檔放置於 ./data 資料夾。
 
 執行主程式：
@@ -74,3 +78,5 @@ Cypher 自動生成優化：針對 GraphCypherQAChain 的 Prompt 進行多次迭
 LangChain Neo4j Integration
 
 Ollama Official Documentation
+
+！本專案為學校報告，提出內容僅供參考
